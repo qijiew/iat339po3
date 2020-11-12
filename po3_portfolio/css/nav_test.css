@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+
+
+    font-size: 18px;
+    background-color: white;
+
+    padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-links,
+.logo {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+.main-nav li {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    
+}
+
+.main-nav li:hover {
+    margin: 0;
+   
+}
+
+.logo {
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+
+@media screen and (min-width: 750px) {
+    .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    div h1 {
+
+        width: 60%;
+        font-size: 30px;
+        margin: auto;
+       
+    }
+
+    .main-nav {
+        display: flex;
+        width: 40%;
+
+        flex-direction: row;
+        justify-content: space-around;
+        height:80%;
+     
+    }
+
+    .main-nav li {
+        margin: 0;
+        
+        
+        
+    }
+
+    .main-nav li:after {
+        display:block;
+        content: '';
+        border-bottom: solid 5px#262223;  
+        border-radius: 5px;
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+      }
+      .main-nav li:hover:after { transform: scaleX(1); }
+
+
+    
+
+
+    .nav-links {
+        display: flex;
+        margin: auto;
+        
+        margin: 0.7em;
+
+    }
+
+
+
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: #333;
+    }
+}
+/* overlay effect*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 1.0s;
+    z-index:1000;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    font-size: 70px;
+}
+
+
+
+/* overlay effect*/

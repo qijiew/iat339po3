@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Style Guide P02</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/po1main.css" rel="stylesheet">
+  <link href="css/nav_test.css" rel="stylesheet">
+  <link href="css/Services.css" rel="stylesheet">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Chenla' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <h1>Portfolio Style Guide</h1>
+
+  <h2>HTML elements for a style guide</h2>
+
+  <header>
+    <div class="nav-area">
+      <nav class="navbar" id="myTopnav">
+        <div class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </div>
+
+        <h1><a href="#" class="logo">Hey, I'm Qijie.</a></h1>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">About</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Design </a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        ×
+      </a>
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Design </a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <script src="nav.js"></script>
+
+  </header>
+
+
+
+  <nav id="menu">
+
+    <div>
+
+      <a href="#interactive_elements">Interactive Elements</a>
+      <a href="#text_elements">Text styling</a>
+      <a href="#combined_elements">Combined elements</a>
+    </div>
+
+  </nav>
+  <div class="box">
+    <!-- INTERACTIVE ELEMENTS SECTION -->
+    <section id="interactive_elements">
+
+
+      <!-- In-text link styling section -->
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS seletor:</h3>
+        <p> .intext-link</p>
+        <h3>Sample code:</h3>
+        <code>&lt;a class="intext-link" href="https://lovedecor.com/"&gt;ux design&lt;/a&gt;</code>
+        <h3>Rendered example:</h3>
+        <a class="intext-link" href="https://lovedecor.com/">UI/UX design</a>
+
+
+      </section>
+
+      <!--Navgation section -->
+      <section>
+
+        <h2>Navigation link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>nav-bar</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;nav&gt;
+          &lt;a href="#home"&gt;HOME&lt;/a&gt;
+          &lt;a href="#about"&gt;ABOUT&lt;/a&gt;
+          &lt;a href="#service"&gt;SERVICE&lt;/a&gt;
+          &lt;nav&gt;
+        </code>
+
+        <h3>Rendered example:</h3>
+        <header>
+            <div class="nav-area">
+              <nav class="navbar" id="myTopnav">
+                <div class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()">
+                  <i class="fa fa-bars"></i>
+                </div>
+        
+                <h1><a href="#" class="logo">Hey, I'm Qijie.</a></h1>
+                
+                <ul class="main-nav" id="js-menu">
+                  <li>
+                    <a href="#" class="nav-links">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-links">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-links">Design </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-links">Contact</a>
+                  </li>
+        
+                </ul>
+              </nav>
+            </div>
+        
+        
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                ×
+              </a>
+              <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Design</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+        
+            <script src="nav.js"></script>
+        
+          </header>
+
+        
+
+      </section>
+
+      <section>
+        <h2>submit/reset button</h2>
+        <h3>CSS selector:</h3>
+        <p>form</p>
+        <h3>Sample code:</h3>
+
+        <code>
+&lt;form&gt;
+
+&lt;p&gt;
+&lt;input type="submit" value="Submit Button"&gt;
+&lt;input type="reset" value="Reset Button"&gt;s
+&lt;/p&gt;
+
+&lt;/form&gt;
+</code>
+
+        <h3>Rendered example:</h3>
+
+
+
+        <form>
+
+          <button class="product-button" type="button">submit</button>
+          <button class="product-button" type="button">reset</button>
+
+
+        </form>
+
+
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+        <h3>CSS selector:</h3>
+        <p> form fieldset input</p>
+        <p> .account-info </p>
+
+
+        <h3>Sample code:</h3>
+        <code>
+ &lt;label&gt;Name&lt;input type="text" name="name"&gt;&lt;/label&gt;
+
+</code>
+
+        <h3>Rendered example:</h3>
+        <form id="account-form">
+          <fieldset class="account-info">
+            <label>
+              Name
+              <input class="input-style" type="text" name="name">
+            </label>
+            <label>
+              Email
+              <input class="input-style" type="email" name="email">
+            </label>
+          </fieldset>
+
+        </form>
+
+        <p> label and input css style learn from <a
+            href="https://learn.shayhowe.com/html-css/building-forms/">https://learn.shayhowe.com/html-css/building-forms/</a>
+        </p>
+      </section>
+
+      <section>
+
+        <h2>Radio button</h2>
+        <h3>CSS selector:</h3>
+        <p> input <br> label </p>
+
+        <h3>Sample code:</h3>
+        <code>
+  &lt;input type="radio" id="home" name="place" value="Home"&gt;
+  &lt;label for="home">home&lt;/label&gt;
+  &lt;input type="radio" id="company" name="place" value="Company"&gt;
+  &lt;label for="company">company&lt;/label&gt;
+</code>
+
+        <h3>Rendered example:</h3>
+
+
+        <div>
+          <h4> Choose design </h4>
+
+
+          <label class="ratio-container">UI Design
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="ratio-container">Ux Design
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          
+        </div>
+
+        <p>Ratio effect learn from <a href="https://www.w3schools.com/howto/howto_css_custom_checkbox.asp">
+            https://www.w3schools.com/howto/howto_css_custom_checkbox.asp</a> </p>
+
+
+      </section>
+
+      <section>
+        <h2>An image as link</h2>
+        <h3>CSS selector:</h3>
+        <p>.image</p>
+
+        <h3>Sample code:</h3>
+        <code>
+  &lt;a class="image" href="https://temza.co.uk/"&gt;
+    &lt;img alt="interior design" src="https://temza.co.uk/wp-content/uploads/2019/05/interior-design-BROMLEY-SE4.jpg" width="750" height="500"&gt;
+ &lt;/a&gt;
+</code>
+        <h3>Rendered example:</h3>
+
+        <div class="image-container">
+
+
+          <div class="container">
+            <a href="https://temza.co.uk/">
+              <img class="image" alt="interior design"
+                src="https://temza.co.uk/wp-content/uploads/2019/05/interior-design-BROMLEY-SE4.jpg">
+            </a>
+            <div class="middle">
+              <div class="text">To see the detail</div>
+            </div>
+          </div>
+        </div>
+        <p> Image copy from <a href="https://temza.co.uk/">here</a></p>
+        <p> Hover effect learn from <a
+            href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade">
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade</a> </p>
+
+
+      </section>
+
+    </section>
+
+
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+
+
+        <h2>Headings</h2>
+        <h3>CSS selector:</h3>
+        <p> h2 <br> h3 <br> h4 <br> h5 </p>
+        <h3>Sample code:</h3>
+        <code>
+          &lt;h2&gt;HOME&lt;/h2&gt;
+              &lt;h3&gt;ABOUT&lt;/h3&gt;
+                  &lt;h4&gt;SERVICE&lt;/h4&gt;
+                    &lt;h5&gt;CONTACT&lt;/h5&gt;
+                  </code>
+        <h3>Rendered example:</h3>
+        <h2>CASE STUDIES</h2>
+        <h3>UI DESIGNS</h3>
+        <h4>UX DESIGNS</h4>
+        <h5>CONTACT</h5>
+
+
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+        <h3>Sample code:</h3>
+        <code>
+        &lt;p&gt;We offers space planning, fabric and furniture selection, custom furniture fabrication, window treatments,
+          wall coverings, color specification and architectural detailing.&lt;/p&gt;
+        </code>
+        <h3>Rendered example:</h3>
+        <p id="para-service"> We offers space planning, fabric and furniture selection, custom furniture fabrication,
+          window treatments,
+          wall coverings, color specification and architectural detailing.</p>
+      </section>
+
+
+
+      <section>
+        <h2>Numbered Lists</h2>
+        <h3>CSS selector:</h3>
+        <p> ol </p>
+        <h3>Sample code:</h3>
+        <code>
+          &lt;ol&gt;
+              &lt;li&gt; New Build&lt;/li&gt;
+              &lt;li&gt; Remodel&lt;/li&gt;
+                &lt;li&gt; Decoration&lt;/li&gt;
+                    &lt;/ol&gt;
+    </code>
+
+        <h3>Rendered example:</h3>
+        <ol>
+          <li> New Build</li>
+          <li> Remodel</li>
+          <li> Decoration </li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+        <!--
+<div id="navagation-bar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#service">SERVICE</a>
+        <a href="#contact">CONTACT</a>
+</div> -->
+
+<header>
+    <div class="nav-area">
+      <nav class="navbar" id="myTopnav">
+        <div class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </div>
+
+        <h1><a href="#" class="logo">Hey, I'm Qijie.</a></h1>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">About</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Design </a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        ×
+      </a>
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Design </a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <script src="nav.js"></script>
+
+  </header>
+
+
+      </section>
+
+
+
+     
+
+    
+    </section>
+
+
+    <section class="border_element">
+        <h2>UI/UX design</h2>
+    </section>
+    <div class="row">
+        <div class="roww">
+            <div class="columnn">
+
+                <div>
+                    <ul class="price">
+
+                        <li><a href="detail.html"><img alt="basic" src="image/ui1.jpg" style="width:100%;"></a></li>
+
+                        <li class="header">Basic</li>
+                        <li>Space planning etc.</li>
+                        <li>$599.99</li>
+
+                        <li><a href="detail.html" class="button">Detail</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="columnn">
+                <div>
+                    <ul class="price">
+
+                        <li><a href="detail2.html"><img alt="standard" src="image/ui1.jpg"
+                                    style="width:100%; height:100% "></a></li>
+
+                        <li class="header">Standard</li>
+                        <li>lighting design etc.</li>
+                        <li>$1200.00</li>
+                        <li><a href="detail2.html" class="button">Detail</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="columnn">
+
+                <div>
+                    <ul class="price">
+
+                        <li><a href="detail.html">
+                                <img alt="premium" src="image/ui1.jpg" style="width:100%;"></a></li>
+
+                        <li class="header">Premium</li>
+                        <li>Prioritized Appointment</li>
+                        <li>$1999.99</li>
+                        <li><a href="detail.html" class="button">Detail</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <div>
+      <h2> Basic branding ideas </h2>
+      <h3>What does the company do, or offer?</h3>
+      <p class="branding-para">
+        AND Studio is a full service interior design studio specialising in refined, sophisticated contemporary
+        interiors., no matter it is designing residential or commercial spaces. AND Studio  can provides highly
+        individual results for different clienteles from style, choice of furniture and colour palettes.
+      </p>
+      <h3>Who is the company to potential customers? (as a person)</h3>
+      <p class="branding-para">Potential customer: 30 - 45 years old person with stable income</p>
+      <h3>Why might this company entice someone to purchase a product or service</h3>
+      <p class="branding-para">AND studio has a breadth of industry experience with a reputation in producing
+        high-quality architectural interior designs that are fresh, tasteful and elegant. The past works will be
+        exhibited on the webiste and it could entice customer to purchase the service.
+      </p>
+    </div>
+
+
+
+    <div class="brand-components">
+      <h2>Assemble brand components </h2>
+      <div>
+        <h3>font</h3>
+        <h4> Text font</h4>
+        <p>
+          <img class="font-image" alt="color" src="image/font.png">
+          <br>
+          Open Sans <br>
+          Designed by Steve Matteson <a
+            href="https://fonts.google.com/specimen/Open+Sans?sidebar.open=true&selection.family=Open+Sans:wght@300"><b>check
+              font at here</b></a>
+        </p>
+
+        <h4> Heading font</h4>
+        <p>
+          <img class="heading-font-image" alt="color" src="image/headingfont.png">
+          <br>
+          David Libre <br>
+          Designed by Multiple Designers <a
+            href="https://fonts.google.com/specimen/David+Libre?sidebar.open=true&selection.family=David+Libre#standard-styles"><b>check
+              font at here</b></a>
+        </p>
+
+      </div>
+
+      <div>
+        <h3>Color palettes</h3>
+
+
+        <img class="color-image" alt="color" src="image/color.jpeg">
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="art-direction">
+      <h2>Art Direction</h2>
+
+      <div class="row">
+        <div class="column">
+          <img class="art-image" alt="art" src="image/ad1.png">
+
+        </div>
+        <div class="column">
+          <img class="art-image" alt="art" src="image/ad2.png">
+
+        </div>
+        <div class="column">
+          <img class="art-image" alt="art" src="image/ad3.png">
+
+
+        </div>
+
+        <div class="column">
+          <img class="art-image" alt="art" src="image/ad4.png">
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <p> learn from <a
+        href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_grid_responsive">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_grid_responsive</a>
+    </p>
+
+    <section>
+      <div class="cite-list">
+        <h2> References list </h2>
+        <h4>payment form</h4>
+        <p>https://www.w3schools.com/howto/howto_css_checkout_form.asp</p>
+
+        <h4>font</h4>
+        <p>https://fonts.google.com/specimen/Open+Sans?sidebar.open=true&selection.family=Open+Sans:wght@300</p>
+        <p> https://fonts.google.com/specimen/David+Libre?sidebar.open=true&selection.family=David+Libre#standard-styles
+        </p>
+
+        <h4>product image1</h4>
+        <p>https://redress.co.za/wp-content/uploads/sites/69/2019/03/spaceplanning.jpg</p>
+
+        <h4>product image2</h4>
+        <p>https://franceandsonblog.com/wp-content/uploads/2018/03/Swatches_hero-13-900x450.jpg</p>
+        <h4>product image3</h4>
+        <p>https://miro.medium.com/max/2560/1*gunJwkyBBhEGtZMNWC5OKA.jpeg</p>
+        <h4> Image Hover effect</h4>
+        <p>https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade </p>
+
+        <h4>Art image source</h4>
+        <p>https://lovedecor.com/</p>
+        <p>https://lovedecor.com/contact-1</p>
+        <p>https://www.shift-interiors.com/services/ </p>
+        <p>http://lauraburtoninteriors.com/residential</p>
+
+        <h4>Ratio effect learn from</h4>
+        <p>https://www.w3schools.com/howto/howto_css_custom_checkbox.asp</p>
+
+
+      </div>
+    </section>
+
+
+
+
+  </div>
+
+
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+
+</body>
+
+</html>

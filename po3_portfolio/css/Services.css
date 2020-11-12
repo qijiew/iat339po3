@@ -1,0 +1,340 @@
+
+.service-column {
+    float: left;
+    width: 33.33%;
+
+    height: auto;
+    background-color: white;
+    justify-content: center;
+
+}
+
+
+.service-row .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.roww {
+    flex-direction: column-reverse;
+}
+
+/* Clear floats after the columns */
+.roww::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnn {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-decoration: none;
+
+}
+
+.columns {
+    width: 100%;
+}
+
+/* Create three columns of equal width */
+.columns {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+
+
+div.tContainer{
+  flex-direction: column;
+  padding: 0% 2%;
+  margin:3% 0% 3% 0%;
+  align-items:center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+div.single_product_container{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+table{
+
+  border-collapse:collapse;
+  width: 100%;
+
+}
+
+ td{
+	text-align:left;
+	border-bottom: 1px solid black;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+tr{
+  text-align:left;
+  	border-bottom: 2px solid black;
+    border-top: 2px solid black;
+
+}
+
+th{
+  text-align:center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 8px;
+}
+
+td {
+  text-align:left;
+  padding: 8px;
+  border-bottom: 2px solid black;
+}
+
+section.border_element{
+    padding: 2% 0% 3% 2%;
+    margin: 2% 0% 3% 0%;
+}
+
+h2 {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Chenla';
+    text-align: center;
+}
+
+
+
+h5{
+  border-top: 1px solid grey;
+  padding-top: 55px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    border-style: solid;
+}
+
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.price2 {
+    list-style-type: none;
+    border: 1px;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: none;
+    color: grey;
+    border-style: solid ;
+
+
+}
+
+
+/* Add shadows on hover */
+.price2:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+/* Pricing header */
+.price2 .header2 {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+/* List items */
+.price li {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    text-align: left;
+}
+
+.price2 li {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 20px;
+    text-align: left;
+}
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    background-color: #737272;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-nav {
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: #262223;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: black;
+    color:white;
+}
+
+.button2 {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.button2:hover,
+.button2:focus {
+    background-color: #737272;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+    transition: .5s ease;
+    background-color: white;
+}
+
+.containerr:hover .overlay {
+    opacity: 0.8;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #f2f2f2;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .columnn {
+        width: 100%;
+    }
+
+    .columns {
+        width: 100%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    .service-column {
+        width: 100%;
+    }
+
+    .roww {
+        flex-direction: column-reverse;
+    }
+
+    .columnn {
+        width: 100%;
+    }
+
+    .columns {
+        width: 100%;
+    }
+
+
+}
